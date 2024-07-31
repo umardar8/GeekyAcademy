@@ -1,0 +1,26 @@
+{
+  "name": "geekyacademy",
+  "version": "1.0.0",
+  "description": "A react based version of the GeekyAcademy.pk which is originally built on wordpress with paid theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umardar8/GeekyAcademy.git"
+  },
+  "keywords": [
+    "technology",
+    "freelancing",
+    "online_earning",
+    "ali_hassan_dar",
+    "geeky_academy"
+  ],
+  "author": "Umar Farooq Dar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umardar8/GeekyAcademy/issues"
+  },
+  "homepage": "https://github.com/umardar8/GeekyAcademy#readme"
+}
