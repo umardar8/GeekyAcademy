@@ -1,0 +1,25 @@
+/* src/styles/HomePage.css */
+.home-page {
+  /* No specific styles needed here, mainly for layout of sections */
+}
+
+.courses-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for the course section */
+}
+
+.courses-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 30px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
