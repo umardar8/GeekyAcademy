@@ -5,7 +5,8 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import CoursesPage from './pages/CoursesPage';
-import JoinPage from './pages/JoinPage'; // For signup/registration
+import SuccessStoriesPage from './pages/SuccessStoriesPage';
+import JoinPage from './pages/JoinPage'; 
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/success-stories" element={<SuccessStoriesPage />} />
             <Route path="/join" element={<JoinPage />} />
           </Routes>
         </main>

@@ -1,23 +1,29 @@
 // src/components/Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaSearch } from "react-icons/fa";
 import '../../styles/Header.css'; // Create this CSS file
 
 function Header() {
   return (
-    <header className="header">
-      <div className="logo">
-        <Link to="/">Geeky Academy</Link>
+    <header className="header container-fluid justify-content-evenly align-content-center">
+      <div className="logo col-2">
+        <Link to="/">GEEKY ACADEMY</Link>
       </div>
       {/* Search Bar */}
-        <div className="relative">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="w-96 bg-white text-black rounded-full py-2 px-4 outline-black ring-1 ring-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600"
-          />
+        <div className="search-bar row col-3 rounded">
+          <div className='col-10'>
+            <input
+              type="text"
+              placeholder="Search Courses"
+              className="search-input border-0 col-12 py-1"
+            />
+          </div>
+          <button className='search-icon col-2 pb-1 ps-4 m-0'>
+            <FaSearch />
+          </button>          
         </div>
-      <nav className="navbar">
+      <nav className="navbar col-5">
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>

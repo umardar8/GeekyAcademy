@@ -1,18 +1,37 @@
 // src/components/HeroSection.js
 import React from 'react';
-import '../../styles/HeroSection.css'; // Create this CSS file
-import heroImage from '../assets/carousel-img1.jpg'; // Path to your hero image
+import '../../styles/HeroSection.css';
+import heroImage from '../assets/carousel-img1.jpg';
+import heroImage2 from '../assets/carousel-img2.jpg';
+import heroImage3 from '../assets/carousel-img3.jpg';
+import alidar from '../assets/alidar.png';
+import Carousel from 'react-bootstrap/Carousel';
 
 function HeroSection() {
   return (
-    <section className="hero-section">
-      <div className="hero-content">
-        <h1>1-ON-1 <br />CAREER ADVICE SERVICE</h1>
-        <p>Get personalized guidance for your career path.</p>
-        <button className="hero-button">Explore Services</button> {/* Or "Book Now" */}
-      </div>
-      <div className="hero-image-container">
-        <img src={heroImage} alt="Career Advice Service" />
+    <section className="hero-section container-fluid">
+      <div className='row'>
+          <Carousel className="hero-carousel col">
+            <Carousel.Item>
+              <Carousel.Caption>
+                <h3>Welcome to Our Learning Platform</h3>
+                <p>Discover a variety of courses to enhance your skills.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Carousel.Caption>
+                <h3>Learn from Experts</h3>
+                <p>Join courses taught by industry professionals.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Carousel.Caption>
+                <h3>Flexible Learning</h3>
+                <p>Study at your own pace, anytime, anywhere.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        <img src={alidar} className='col' />
       </div>
     </section>
   );
