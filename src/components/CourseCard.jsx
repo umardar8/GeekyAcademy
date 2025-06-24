@@ -1,6 +1,8 @@
 // src/components/CourseCard.js
 import React from 'react';
-import '../../styles/CourseCard.css'; // Create this CSS file
+import '../../styles/CourseCard.css';
+import { HiUsers } from "react-icons/hi";
+import { IoStarSharp } from "react-icons/io5";
 
 function CourseCard({ course }) {
   return (
@@ -13,8 +15,8 @@ function CourseCard({ course }) {
         <h3 className="course-title">{course.title}</h3>
         <p className="course-instructor">By {course.instructor}</p>
         <div className="course-details">
-          <span><i className="fas fa-users"></i> {course.studentsEnrolled} Students</span>
-          <span><i className="fas fa-star"></i> {course.rating} ({course.reviews} Reviews)</span>
+          <span><HiUsers /> {course.studentsEnrolled} Students</span>
+          <span><IoStarSharp /> {course.rating} ({course.reviews} Reviews)</span>
         </div>
         <div className="course-price">
           {course.price === 'Free' ? (

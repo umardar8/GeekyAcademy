@@ -33,7 +33,7 @@ function Footer() {
         {/* Add social media icons here if needed */}
       </div>
       <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} MUFT. All rights reserved.
+        &copy; {new Date().getFullYear()} GEEKY ACADEMY. All rights reserved.
       </div>
     </footer>
   );

@@ -35,7 +35,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #007bff; /* Adjust as needed for LIVE/FREE */
+  background-color: #000; /* Adjust as needed for LIVE/FREE */
   color: white;
   padding: 5px 10px;
   border-radius: 4px;
@@ -58,7 +58,7 @@
 
 .course-instructor {
   font-size: 0.9em;
-  color: #777;
+  color: #333;
   margin-bottom: 10px;
 }
 
@@ -75,15 +75,15 @@
   align-items: center;
 }
 
-.course-details i {
+.course-details {
   margin-right: 5px;
-  color: #007bff; /* Icon color */
+  color: #28a745; /* Icon color */
 }
 
 .course-price {
   font-size: 1.3em;
   font-weight: bold;
-  color: #007bff; /* Price color */
+  color: #28a745; /* Price color */
   margin-top: auto; /* Pushes price to the bottom */
   margin-bottom: 15px;
 }
@@ -97,7 +97,7 @@
 }
 
 .course-button {
-  background-color: #007bff;
+  background-color: #43A047;
   color: white;
   border: none;
   padding: 10px 15px;

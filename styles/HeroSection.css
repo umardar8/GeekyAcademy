@@ -1,4 +1,78 @@
 .hero-section {
-    background: #000;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(87, 199, 133, 1) 50%);
+  background: linear-gradient(90deg, rgba(42, 138, 155, 1) 0%, rgb(64, 228, 133) 50%);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.hero-image {
+  max-width: 80%;
+  height: auto;
+  max-height: 500px;
+}
+
+/* --- Start of Carousel Fix --- */
+
+/* 1. Turn the main carousel component into a flex container */
+.hero-carousel {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure it fills the column height */
+  justify-content: center; /* Center the content (text + indicators) vertically */
+}
+
+/* 2. Target the content area (the slides) and give it the first order */
+.hero-carousel .carousel-inner {
+  order: 1; /* This will be the first item in the flex container */
+  width: 100%; /* Ensure it takes full width */
+}
+
+/* 3. Target the indicators and give them the second order */
+.hero-carousel .carousel-indicators {
+  order: 2; /* This will be the second item, appearing below the content */
+  position: static; /* Remove absolute positioning to keep it in the flex flow */
+  margin: 20px 0 0 0; /* Add top margin for spacing, remove others */
+  justify-content: flex-start; /* Align indicators to the left on desktop */
+}
+
+/* --- End of Carousel Fix --- */
+
+
+.hero-carousel-item {
+  height: 100%;
+}
+
+.hero-carousel h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-carousel p {
+  font-size: 1.2rem;
+}
+
+/* Optional: Style for the indicator buttons */
+.hero-carousel .carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .hero-image {
+    max-width: 60%;
+    margin-bottom: 20px;
+  }
+
+  /* Center indicators on mobile to match centered text */
+  .hero-carousel .carousel-indicators {
+    justify-content: center;
+  }
 }

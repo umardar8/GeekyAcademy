@@ -1,24 +1,43 @@
 // src/pages/ContactPage.js
 import React from 'react'; // Create this CSS file
+import { FaClock, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
+
 
 function ContactPage() {
   return (
-    <div className="contact-page-container">
-      <section className="contact-hero">
-        <h1>Contact Us</h1>
-        <p>We'd love to hear from you!</p>
-      </section>
+    <div className="contact-page-container p-5">
 
+      <h1>Contact Us</h1>
+              <hr />
       <section className="contact-info-section">
         <div className="contact-details">
-          <h2>Get in Touch</h2>
-          <p><i className="fas fa-map-marker-alt"></i> Address: 123 Education Lane, Knowledge City, Jamshoro, Sindh, Pakistan</p>
-          <p><i className="fas fa-phone"></i> Phone: +92 314-1234567</p>
-          <p><i className="fas fa-envelope"></i> Email: info@muft.com</p>
-          <p><i className="fas fa-clock"></i> Business Hours: Mon-Fri, 9:00 AM - 5:00 PM (PKT)</p>
+          {/* <h2>Get in Touch</h2> */}
+          <p>We'd love to hear from you!</p>
+          <p><FaMapMarkerAlt /> Address: Head Office: Geeky Academy Institue, Ahmednagar Chatha, Gujranwala, Punjab, Pakistan (52070)</p>
+          <p><FaPhone /> Phone: +92 342-3181625</p>
+          <p><MdEmail /> Email: contactus@geekyacademy.com</p>
+          <p><FaClock /> Business Hours: Mon-Fri, 9:00 AM - 5:00 PM (PKT)</p>
         </div>
+        <br />
+        <section className="map-section">
+        <h2>Find us on the Map</h2>
+                <hr />
+        {/* Embed a Google Map here using an iframe or a React map library */}
+        <iframe
+          title="Our Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d502.21873908632756!2d73.9872695234018!3d32.31151373932164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f3b7ec74076f7%3A0xdda69a8e39319c1b!2sAhmad%20Nagar%20Chattha%2C%20Pakistan!5e0!3m2!1sen!2s!4v1750792910748!5m2!1sen!2s"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
 
-        <div className="contact-form-container">
+        {/* <div className="contact-form-container">
           <h2>Send us a Message</h2>
           <form className="contact-form">
             <div className="form-group">
@@ -38,24 +57,10 @@ function ContactPage() {
               <textarea id="message" name="message" rows="5" required></textarea>
             </div>
             <button type="submit" className="submit-button">Send Message</button>
-          </form>
-        </div>
+          </form> */}
+        {/* </div> */}
       </section>
 
-      <section className="map-section">
-        <h2>Find Us on the Map</h2>
-        {/* Embed a Google Map here using an iframe or a React map library */}
-        <iframe
-          title="Our Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14457.656519175402!2d68.25700889999999!3d25.43859735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c776fb0821d63%3A0xb35a3962d3a373b5!2sJamshoro%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1718919600000!5m2!1sen!2sus"
-          width="100%"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
     </div>
   );
 }

@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import CourseCard from '../components/CourseCard';
 import coursesData from '../../data/coursesData';
- // Create this CSS file
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 function CoursesPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -25,14 +26,14 @@ function CoursesPage() {
   });
 
   return (
-    <div className="courses-page-container">
+    <div className="courses-page-container p-5">
       <section className="courses-page-hero">
         <h1>Our Courses</h1>
         <p>Explore a wide range of courses to boost your career.</p>
       </section>
-
+      <hr />
       <section className="courses-filter-section">
-        <div className="search-bar">
+        {/* <div className="search-bar">
           <input
             type="text"
             placeholder="Search courses..."
@@ -40,29 +41,26 @@ function CoursesPage() {
             onChange={handleSearchChange}
           />
           <i className="fas fa-search"></i>
-        </div>
+        </div> */}
         <div className="filter-buttons">
-          <button
-            className={filterType === 'All' ? 'active' : ''}
-            onClick={() => handleFilterChange('All')}
-          >
-            All Courses
-          </button>
-          <button
-            className={filterType === 'Free' ? 'active' : ''}
-            onClick={() => handleFilterChange('Free')}
-          >
-            Free Courses
-          </button>
-          <button
-            className={filterType === 'Live' ? 'active' : ''}
-            onClick={() => handleFilterChange('Live')}
-          >
-            Live Courses
-          </button>
-          {/* Add more filter options if needed, e.g., category */}
+          <ButtonGroup className="mb-2">
+            <Button 
+              className={filterType === 'All' ? 'active' : ''}
+              variant='success'
+              onClick={() => handleFilterChange('All')}>All</Button>
+            <Button 
+              className={filterType === 'Free' ? 'active' : ''}
+              variant='success'
+              onClick={() => handleFilterChange('Free')}>Free</Button>
+            <Button 
+              className={filterType === 'Live' ? 'active' : ''}
+              variant='success'
+              onClick={() => handleFilterChange('Live')}>Live</Button>
+          </ButtonGroup>
         </div>
       </section>
+
+
 
       <section className="all-courses-grid">
         {filteredCourses.length > 0 ? (
