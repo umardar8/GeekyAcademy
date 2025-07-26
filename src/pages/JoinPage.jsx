@@ -30,7 +30,7 @@ function JoinPage() {
   return (
     <div className="join-page-container">
       <div className="join-form-wrapper">
-        <h2>Join MUFT - Sign Up for Courses</h2>
+        <h2>Join Geeky Academy - Sign Up for Courses</h2>
         <form className="join-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Full Name:</label>

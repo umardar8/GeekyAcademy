@@ -1,16 +1,16 @@
 // src/data/coursesData.js
-import gmb from '../src/assets/gmb.jpeg';
-import googleads from '../src/assets/google-ads.jpeg'
-import digitalmarketing from '../src/assets/digital-marketing.jpg';
-import seo from '../src/assets/seo.png';
-import videoediting from '../src/assets/video-editing.jpeg';
-import amazon from '../src/assets/amazon.png';
-import truckdispatcher from '../src/assets/truckdispatch.jpg';
+import gmb from '../src/assets/courses/gmb.jpeg';
+import googleads from '../src/assets/courses/google-ads.jpeg'
+import digitalmarketing from '../src/assets/courses/digital-marketing.jpg';
+import seo from '../src/assets/courses/seo.png';
+import videoediting from '../src/assets/courses/video-editing.jpeg';
+import amazon from '../src/assets/courses/amazon.png';
+import truckdispatcher from '../src/assets/courses/truckdispatch.jpg';
 
 const courses = [
   {
     id: 'course01',
-    image: digitalmarketing, // Replace with actual image paths
+    image: digitalmarketing, 
     title: 'Digital Marketing with AI (Basics to Advanced)',
     instructor: 'Ali Hassan Dar',
     studentsEnrolled: '25k+',

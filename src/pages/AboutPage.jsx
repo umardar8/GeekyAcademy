@@ -6,7 +6,7 @@ function AboutPage() {
   return (
     <div className="about-page-container p-5">
       <section className="about-hero">
-        <h1>About MUFT</h1>
+        <h1>About GEEKY ACADEMY</h1>
         <p>Your partner in career growth and skill development.</p>
       </section>
 
